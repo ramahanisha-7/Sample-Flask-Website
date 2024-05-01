@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike Enthusiast Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header-strip {
+            background-color: #cc0000;
+            padding: 10px 20px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .header-text {
+            margin: 0;
+            text-align: left;
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h3 {
+            text-align: center;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .form-box {
+            width: 1250px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-left: 50px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            justify-content: flex-start;
+        }
+        .form-row label {
+            flex: 1;
+            margin-right: 20px;
+            text-align: left;
+            font-weight: bold;
+            color: #555;
+        }
+        .form-row input[type="text"] {
+            flex: 2;
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #333;
+        }
+        input[type="submit"] {
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+            padding: 8px;
+            background-color: #067722;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #055a1b;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-strip">
+        <h2 class="header-text">Biker Details</h2>
+    </div>
+    <div class="form-box">
+        <form method="post">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required>
+            </div>
+
+            <div class="form-row">
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender" required>
+            </div>
+
+            <div class="form-row">
+                <label for="contact">Contact Details:</label>
+                <input type="text" id="contact" name="contact" required>
+            </div>
+
+            <div class="form-row">
+                <label for="region">Region:</label>
+                <input type="text" id="region" name="region" required>
+            </div>
+
+            <div class="form-row">
+                <label for="bike-company">Bike Company:</label>
+                <input type="text" id="bike-company" name="bike_company" required>
+            </div>
+
+            <div class="form-row">
+                <label for="make-model">Make Model:</label>
+                <input type="text" id="make-model" name="make_model" required>
+            </div>
+
+            <div class="form-row">
+                <label for="purchased-amount">Purchased Amount:</label>
+                <input type="text" id="purchased-amount" name="purchased_amount" required>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
